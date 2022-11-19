@@ -1,0 +1,28 @@
+
+.fondo{
+    background-image: url(../imagenes/formback5.jpg);
+    background-size: cover;
+}
+main{
+    justify-content: center;
+    align-items: center;
+}
+.ancho{
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.273);
+    margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+    .ancho{
+        padding: 50px;
+        background-color: rgba(255, 255, 255, 0.427);
+        margin-bottom: 16px;
+    }
+    .form-label{
+        margin: 6px;
+    }
+    .fondo{
+        background-image: url(../imagenes/formback1.jpg);
+        background-size: cover;
+    }
+}

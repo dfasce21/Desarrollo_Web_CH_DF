@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* nav */
+
+.navbar-nav{
+    align-items: center;
+}
+
+.activo{
+    color: rgb(159, 25, 25);
+}
+
+/* footer */
+
+.footer1{
+    background-color: rgb(40, 40, 40);
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+        font-size: 130%;
+        color: #cccc;
+        margin: 10px;
+        }
+    }
+}
