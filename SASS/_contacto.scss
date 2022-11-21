@@ -4,8 +4,7 @@
     background-size: cover;
 }
 main{
-    justify-content: center;
-    align-items: center;
+    @include centrado();
 }
 .ancho{
     padding: 25px;

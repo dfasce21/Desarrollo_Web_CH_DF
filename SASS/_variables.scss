@@ -1,0 +1,15 @@
+
+/* display centrado */
+
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* colores */
+
+$color1: rgb(159, 0, 0);
+$color2: black;
+$color3: white;
+$color4: rgb(40, 40, 40);

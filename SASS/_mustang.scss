@@ -4,8 +4,7 @@
     flex-direction: column;
     padding: 0px;
     div{
-        display: flex;
-        justify-content: center;
+        @include centrado();
     }
     article{
         padding-bottom: 50px;
@@ -35,7 +34,7 @@
                     border-radius: 50%;
                     margin: 15px;
                     &:hover {
-                        box-shadow: 0 0 20px 0 rgb(204, 13, 13);
+                        box-shadow: 0 0 20px 0 $color1;
                     }
                 }
                 p{
@@ -47,7 +46,7 @@
                     font-size: 20px;
                 }
                 h3{
-                    color: rgb(145, 14, 14);
+                    color: $color1;
                 }
             }
         }
@@ -69,16 +68,16 @@
     top: 80px;
 }
 .article_mustang_2{
-    background-color: black;
-    color: white;
+    background-color: $color2;
+    color: $color3;
     padding-top: 20px;
 }
 .div_caracteristicas{
     padding-top: 40px;
 }
 .h2_GT{
-    background-color: rgb(145, 14, 14);
-    color: white;
+    background-color: $color1;
+    color: $color3;
 }
 
 @media (min-width: 768px) {
