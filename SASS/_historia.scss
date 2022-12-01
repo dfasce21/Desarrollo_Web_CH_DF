@@ -1,10 +1,17 @@
+@use './variables.scss';
+
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .section_historia_1{
-    @include centrado();
+    @include centrado ();
     flex-direction: column;
     padding: 10px;
     div{
-        @include centrado();
+        @include centrado ();
         flex-wrap: wrap;
     }
     p{
@@ -16,15 +23,15 @@
 }
 
 .section_historia_2{
-    background-color: $color2;
-    color: $color3;
+    background-color: variables.$color2;
+    color: variables.$color3;
 }
 
 /* cards */
 
 .card {
-    width: 420px;
-    height: 300px;
+    width: 390px;
+    height: 270px;
     border-radius: 1em;
     padding: 1.9rem;
     background: none;
@@ -33,7 +40,7 @@
     align-items: flex-end;
     transition: 0.4s ease-out;
     box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
-    margin: 30px;
+    margin: 15px;
    }
    
    .card:before {
@@ -92,12 +99,13 @@
     transition: 0.4s ease;
     width: 40%;
     align-self: center;
+    display: none;
    }
    
    /*Image*/
    .card-img {
-    width: 420px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -120,6 +128,35 @@
    }
    
    .card-button:hover {
-    background: $color1;
-    color: $color3;
+    background: variables.$color1;
+    color:white;
    }
+
+/* modal */
+
+.modal-title{
+    color: variables.$color1;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .modal-img{
+            width: 30%;
+            border-radius: 10px;
+            margin: 5px;
+            margin-bottom: 15px;
+            
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 420px;
+        height: 300px;
+        margin: 25px;
+       }
+    .card-button{
+        display: block;
+    }
+}

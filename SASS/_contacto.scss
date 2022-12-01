@@ -1,10 +1,17 @@
+@use './variables.scss';
+
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .fondo{
     background-image: url(../imagenes/formback5.jpg);
     background-size: cover;
 }
 main{
-    @include centrado();
+    @include centrado ();
 }
 .ancho{
     padding: 25px;
