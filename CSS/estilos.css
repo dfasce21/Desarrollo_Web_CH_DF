@@ -177,10 +177,10 @@ button:hover .button-text {
   color: #fff;
 }
 
-.modal-body {
+.modal-index {
   padding: 0px;
 }
-.modal-body .modal-img-index {
+.modal-index .modal-img-index {
   width: 110%;
   border-radius: 10px;
 }
